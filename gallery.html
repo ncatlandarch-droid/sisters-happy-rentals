@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse our portfolio of stunning event decor in Greensboro, NC. From elegant weddings to vibrant birthday parties, see how Sisters Happy Rentals transforms every celebration.">
+  <meta name="keywords" content="event decor gallery Greensboro NC, party rental portfolio, wedding decor Piedmont Triad, birthday party decorations, baby shower styling, corporate event design, backdrop rentals">
+  <meta name="author" content="Sisters Happy Rentals, LLC">
+  <meta property="og:title" content="Our Portfolio | Sisters Happy Rentals, LLC">
+  <meta property="og:description" content="Every event tells a story. Browse stunning event decor and party rental designs by Sisters Happy Rentals in Greensboro, NC.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/gallery-wedding.png">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://www.sistershappyrentals.com/gallery.html">
+  <title>Our Portfolio | Sisters Happy Rentals, LLC — Event Decor Gallery Greensboro NC</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Outfit:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ============ NAVIGATION ============ -->
+  <nav class="nav" id="main-nav" aria-label="Main navigation">
+    <div class="nav__inner">
+      <a href="index.html" class="nav__logo" aria-label="Sisters Happy Rentals Home">
+        <img src="assets/logo/logo.png" alt="Sisters Happy Rentals, LLC Logo">
+      </a>
+      <ul class="nav__links">
+        <li><a href="index.html" class="nav__link">Home</a></li>
+        <li><a href="services.html" class="nav__link">Services</a></li>
+        <li><a href="gallery.html" class="nav__link active">Gallery</a></li>
+        <li><a href="packages.html" class="nav__link">Packages</a></li>
+        <li><a href="about.html" class="nav__link">About</a></li>
+        <li><a href="contact.html" class="nav__cta">Contact</a></li>
+      </ul>
+      <button class="nav__hamburger" id="hamburger-toggle" aria-label="Toggle menu" aria-expanded="false">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+    <div class="nav__mobile" id="mobile-nav" role="dialog" aria-label="Mobile navigation">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="packages.html">Packages</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </nav>
+
+  <!-- ============ PAGE HEADER ============ -->
+  <header class="page-header" id="gallery-header">
+    <div class="container text-center">
+      <span class="page-header__label">Portfolio</span>
+      <h1 class="page-header__title">Our Portfolio</h1>
+      <p class="page-header__subtitle">Every event tells a story. Here are some of ours.</p>
+    </div>
+  </header>
+
+  <!-- ============ GALLERY SECTION ============ -->
+  <section class="section section--white" id="gallery-section" aria-label="Event gallery">
+    <div class="container">
+
+      <!-- Filter Buttons -->
+      <div class="gallery-filters reveal" id="gallery-filters" role="group" aria-label="Filter gallery by event type">
+        <button class="gallery-filter active" data-filter="all" id="filter-all">All</button>
+        <button class="gallery-filter" data-filter="weddings" id="filter-weddings">Weddings</button>
+        <button class="gallery-filter" data-filter="birthdays" id="filter-birthdays">Birthdays</button>
+        <button class="gallery-filter" data-filter="babyshowers" id="filter-babyshowers">Baby Showers</button>
+        <button class="gallery-filter" data-filter="corporate" id="filter-corporate">Corporate</button>
+        <button class="gallery-filter" data-filter="backdrops" id="filter-backdrops">Backdrops</button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="gallery-grid stagger-children" id="gallery-grid">
+
+        <!-- 1 — Golden Birthday Celebration -->
+        <article class="gallery-item" data-category="birthdays" id="gallery-item-1" aria-label="Golden Birthday Celebration">
+          <img src="assets/images/hero-event.png" alt="Golden Birthday Celebration with elegant gold decor in Greensboro NC" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div>
+              <span class="gallery-item__category">Birthdays</span>
+              <h3 class="gallery-item__label">Golden Birthday Celebration</h3>
+            </div>
+          </div>
+        </article>
+
+        <!-- 2 — Elegant Wedding Reception -->
+        <article class="gallery-item" data-category="weddings" id="gallery-item-2" aria-label="Elegant Wedding Reception">
+          <img src="assets/images/gallery-wedding.png" alt="Elegant Wedding Reception styled by Sisters Happy Rentals" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div>
+              <span class="gallery-item__category">Weddings</span>
+              <h3 class="gallery-item__label">Elegant Wedding Reception</h3>
+            </div>
+          </div>
+        </article>
+
+        <!-- 3 — Princess Birthday Party -->
+        <article class="gallery-item" data-category="birthdays" id="gallery-item-3" aria-label="Princess Birthday Party">
+          <img src="assets/images/gallery-birthday.png" alt="Princess themed birthday party with pink and gold decorations" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div>
+              <span class="gallery-item__category">Birthdays</span>
+              <h3 class="gallery-item__label">Princess Birthday Party</h3>
+            </div>
+          </div>
+        </article>
+
+        <!-- 4 — Baby Boy Shower -->
+        <article class="gallery-item" data-category="babyshowers" id="gallery-item-4" aria-label="Baby Boy Shower">
+          <img src="assets/images/gallery-babyshower.png" alt="Baby Boy Shower with blue and gold balloon installations" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div>
+              <span class="gallery-item__category">Baby Showers</span>
+              <h3 class="gallery-item__label">Baby Boy Shower</h3>
+            </div>
+          </div>
+        </article>
+
+        <!-- 5 — Corporate Gala Night -->
+        <article class="gallery-item" data-category="corporate" id="gallery-item-5" aria-label="Corporate Gala Night">
+          <img src="assets/images/gallery-corporate.png" alt="Corporate Gala Night with sophisticated event styling" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div>
+              <span class="gallery-item__category">Corporate</span>
+              <h3 class="gallery-item__label">Corporate Gala Night</h3>
+            </div>
+          </div>
+        </article>
+
+        <!-- 6 — Gold Shimmer Wall -->
+        <article class="gallery-item" data-category="backdrops" id="gallery-item-6" aria-label="Gold Shimmer Wall">
+          <img src="assets/images/services-backdrop.png" alt="Gold Shimmer Wall backdrop for photo opportunities" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div>
+              <span class="gallery-item__category">Backdrops</span>
+              <h3 class="gallery-item__label">Gold Shimmer Wall</h3>
+            </div>
+          </div>
+        </article>
+
+        <!-- 7 — Romantic Garden Wedding (duplicate image, new label) -->
+        <article class="gallery-item" data-category="weddings" id="gallery-item-7" aria-label="Romantic Garden Wedding">
+          <img src="assets/images/gallery-wedding.png" alt="Romantic Garden Wedding with lush floral accents" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div>
+              <span class="gallery-item__category">Weddings</span>
+              <h3 class="gallery-item__label">Romantic Garden Wedding</h3>
+            </div>
+          </div>
+        </article>
+
+        <!-- 8 — Sweet Sixteen Soirée (duplicate image, new label) -->
+        <article class="gallery-item" data-category="birthdays" id="gallery-item-8" aria-label="Sweet Sixteen Soirée">
+          <img src="assets/images/gallery-birthday.png" alt="Sweet Sixteen Soirée with glamorous pink and gold styling" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div>
+              <span class="gallery-item__category">Birthdays</span>
+              <h3 class="gallery-item__label">Sweet Sixteen Soirée</h3>
+            </div>
+          </div>
+        </article>
+
+        <!-- 9 — Blushing Baby Girl Shower (duplicate image, new label) -->
+        <article class="gallery-item" data-category="babyshowers" id="gallery-item-9" aria-label="Blushing Baby Girl Shower">
+          <img src="assets/images/gallery-babyshower.png" alt="Blushing Baby Girl Shower with soft pink decor and florals" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div>
+              <span class="gallery-item__category">Baby Showers</span>
+              <h3 class="gallery-item__label">Blushing Baby Girl Shower</h3>
+            </div>
+          </div>
+        </article>
+
+        <!-- 10 — Rose Gold Sequin Backdrop (duplicate image, new label) -->
+        <article class="gallery-item" data-category="backdrops" id="gallery-item-10" aria-label="Rose Gold Sequin Backdrop">
+          <img src="assets/images/services-backdrop.png" alt="Rose Gold Sequin Backdrop for memorable photo moments" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div>
+              <span class="gallery-item__category">Backdrops</span>
+              <h3 class="gallery-item__label">Rose Gold Sequin Backdrop</h3>
+            </div>
+          </div>
+        </article>
+
+        <!-- 11 — Annual Awards Ceremony (duplicate image, new label) -->
+        <article class="gallery-item" data-category="corporate" id="gallery-item-11" aria-label="Annual Awards Ceremony">
+          <img src="assets/images/gallery-corporate.png" alt="Annual Awards Ceremony with luxury corporate decor" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div>
+              <span class="gallery-item__category">Corporate</span>
+              <h3 class="gallery-item__label">Annual Awards Ceremony</h3>
+            </div>
+          </div>
+        </article>
+
+        <!-- 12 — Enchanted Evening Celebration (duplicate image, new label) -->
+        <article class="gallery-item" data-category="birthdays" id="gallery-item-12" aria-label="Enchanted Evening Celebration">
+          <img src="assets/images/hero-event.png" alt="Enchanted Evening Celebration with gold balloon garlands" loading="lazy">
+          <div class="gallery-item__overlay">
+            <div>
+              <span class="gallery-item__category">Birthdays</span>
+              <h3 class="gallery-item__label">Enchanted Evening Celebration</h3>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /.gallery-grid -->
+    </div><!-- /.container -->
+  </section>
+
+  <!-- ============ CTA BANNER ============ -->
+  <section class="cta-banner" id="gallery-cta" aria-label="Start planning your event">
+    <div class="container text-center reveal">
+      <h2 class="cta-banner__title">Ready to Create Your Own Story?</h2>
+      <p class="cta-banner__subtitle">Let's design an unforgettable celebration together. Your dream event is just a conversation away.</p>
+      <div>
+        <a href="contact.html" class="btn btn--primary btn--lg" id="cta-contact-btn">Start Planning</a>
+        <a href="packages.html" class="btn btn--white btn--lg" id="cta-packages-btn">View Packages</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer" id="site-footer" role="contentinfo">
+    <div class="container">
+      <div class="footer__grid">
+        <!-- Brand -->
+        <div class="footer__brand">
+          <a href="index.html" aria-label="Sisters Happy Rentals Home">
+            <img src="assets/logo/logo.png" alt="Sisters Happy Rentals, LLC" class="footer__logo">
+          </a>
+          <p>Sisters Happy Rentals, LLC — Where Every Celebration Shines. Proudly serving the Piedmont Triad with premium event decor and styling.</p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Follow us on Instagram" id="social-instagram">📷</a>
+            <a href="#" class="footer__social-link" aria-label="Follow us on Facebook" id="social-facebook">📘</a>
+            <a href="#" class="footer__social-link" aria-label="Follow us on Pinterest" id="social-pinterest">📌</a>
+            <a href="#" class="footer__social-link" aria-label="Follow us on TikTok" id="social-tiktok">🎵</a>
+          </div>
+        </div>
+        <!-- Quick Links -->
+        <div>
+          <h4 class="footer__heading">Quick Links</h4>
+          <a href="index.html" class="footer__link">Home</a>
+          <a href="services.html" class="footer__link">Services</a>
+          <a href="gallery.html" class="footer__link">Gallery</a>
+          <a href="packages.html" class="footer__link">Packages</a>
+          <a href="about.html" class="footer__link">About Us</a>
+                    <a href="community.html" class="footer__link">Give Back</a>
+          <a href="contact.html" class="footer__link">Contact</a>
+        </div>
+        <!-- Services -->
+        <div>
+          <h4 class="footer__heading">Services</h4>
+          <a href="services.html" class="footer__link">Full Event Styling</a>
+          <a href="services.html" class="footer__link">Balloon Installations</a>
+          <a href="services.html" class="footer__link">Backdrop Rentals</a>
+          <a href="services.html" class="footer__link">Marquee Letters</a>
+          <a href="services.html" class="footer__link">Tableware &amp; Linens</a>
+          <a href="services.html" class="footer__link">Day-Of Coordination</a>
+        </div>
+        <!-- Contact -->
+        <div>
+          <h4 class="footer__heading">Get In Touch</h4>
+          <a href="mailto:hello@sistershappyrentals.com" class="footer__link">hello@sistershappyrentals.com</a>
+          <a href="tel:+13365550199" class="footer__link">(336) 555-0199</a>
+          <p class="footer__link">Greensboro, NC 27401</p>
+          <p class="footer__link">Serving the Piedmont Triad</p>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <p>&copy; 2026 Sisters Happy Rentals, LLC. All rights reserved.</p>
+        <p>Designed with ✨ in Greensboro, NC</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ LIGHTBOX ============ -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox__close" aria-label="Close">&times;</button>
+    <img src="" alt="">
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
