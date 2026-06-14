@@ -1239,7 +1239,8 @@ h6 { font-size: var(--text-lg); }
 }
 
 .footer__logo {
-  height: 40px;
+  height: 80px;
+  width: auto;
   filter: brightness(1.5);
 }
 
