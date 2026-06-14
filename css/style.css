@@ -786,7 +786,7 @@ h6 { font-size: var(--text-lg); }
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: var(--space-xl);
-  align-items: start;
+  align-items: stretch;
 }
 
 .pricing-card {
@@ -797,6 +797,16 @@ h6 { font-size: var(--text-lg); }
   border: 1px solid var(--gray-200);
   transition: all var(--duration-base) var(--ease-out);
   position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.pricing-card__features {
+  flex: 1;
+}
+
+.pricing-card .btn {
+  margin-top: auto;
 }
 
 .pricing-card:hover {
