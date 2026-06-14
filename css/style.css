@@ -246,7 +246,6 @@ h6 { font-size: var(--text-lg); }
 }
 
 .nav__logo {
-  height: 140px;
   transition: transform var(--duration-fast) var(--ease-out);
 }
 
@@ -254,9 +253,20 @@ h6 { font-size: var(--text-lg); }
   transform: scale(1.03);
 }
 
-.nav__logo img {
-  height: 100%;
-  width: auto;
+.nav__logo-text {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: var(--plum);
+  letter-spacing: 0.02em;
+}
+
+.nav__logo-text em {
+  font-family: var(--font-script);
+  font-style: normal;
+  color: var(--gold);
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 
 .nav__links {
@@ -518,8 +528,35 @@ h6 { font-size: var(--text-lg); }
   position: relative;
   z-index: 2;
   text-align: center;
-  padding: var(--space-xl);
   max-width: 800px;
+  padding: 0 var(--space-xl);
+}
+
+.hero__logo {
+  max-width: 420px;
+  width: 90%;
+  height: auto;
+  margin: 0 auto var(--space-lg);
+  display: block;
+  filter: drop-shadow(0 4px 20px rgba(0, 0, 0, 0.3));
+  animation: heroLogoIn 1.2s ease-out;
+}
+
+@keyframes heroLogoIn {
+  0% { opacity: 0; transform: scale(0.85) translateY(20px); }
+  100% { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+/* Screen reader only — keeps h1 for SEO */
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
 }
 
 .hero__accent {
