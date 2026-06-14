@@ -530,82 +530,23 @@ h6 { font-size: var(--text-lg); }
 }
 /* ---------- Hero Logo Badge ---------- */
 .hero-logo-badge {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  background: rgba(255, 255, 255, 0.95);
-  backdrop-filter: blur(10px);
-  border: 2px solid var(--gold);
+/* ---------- Hero Logo ---------- */
+.hero__logo {
+  max-width: 480px;
+  width: 92%;
+  height: auto;
+  margin: 0 auto var(--space-lg);
+  display: block;
+  background: rgba(255, 255, 255, 0.92);
   border-radius: var(--radius-xl);
-  padding: 2.5rem 3.5rem 2rem;
-  margin: 0 auto var(--space-xl);
-  max-width: 420px;
-  width: 90%;
-  position: relative;
-  box-shadow: 
-    0 8px 32px rgba(0, 0, 0, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 0.5);
-  animation: badgeIn 1s ease-out;
+  padding: 1.2rem 1.5rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  animation: heroLogoIn 1s ease-out;
 }
 
-@keyframes badgeIn {
+@keyframes heroLogoIn {
   0% { opacity: 0; transform: scale(0.9) translateY(15px); }
   100% { opacity: 1; transform: scale(1) translateY(0); }
-}
-
-.hero-logo-badge__florals {
-  font-size: 1.4rem;
-  line-height: 1;
-  margin-bottom: 0.4rem;
-  opacity: 0.7;
-}
-
-.hero-logo-badge__florals--bottom {
-  margin-bottom: 0;
-  margin-top: 0.5rem;
-}
-
-.hero-logo-badge__label {
-  font-family: var(--font-body);
-  font-size: 0.65rem;
-  letter-spacing: 0.25em;
-  text-transform: uppercase;
-  color: var(--gray-400);
-  margin-bottom: 0.3rem;
-}
-
-.hero-logo-badge__name {
-  font-family: var(--font-heading);
-  font-size: 2.2rem;
-  font-weight: 600;
-  color: var(--plum);
-  letter-spacing: 0.06em;
-  line-height: 1.1;
-}
-
-.hero-logo-badge__accent {
-  font-family: var(--font-script);
-  font-size: 3.2rem;
-  color: var(--gold);
-  line-height: 0.9;
-  margin: -0.1rem 0;
-}
-
-.hero-logo-badge__divider {
-  display: block;
-  width: 60px;
-  height: 2px;
-  background: linear-gradient(90deg, transparent, var(--gold), transparent);
-  margin: 0.6rem 0;
-}
-
-.hero-logo-badge__tagline {
-  font-family: var(--font-body);
-  font-size: 0.7rem;
-  letter-spacing: 0.15em;
-  text-transform: uppercase;
-  color: var(--gray-500);
-  text-align: center;
 }
 
 /* Screen reader only — keeps h1 for SEO */
