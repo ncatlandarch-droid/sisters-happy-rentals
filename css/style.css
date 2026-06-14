@@ -531,8 +531,8 @@ h6 { font-size: var(--text-lg); }
 
 /* ---------- Hero Logo ---------- */
 .hero__logo {
-  max-width: 340px;
-  width: 65%;
+  max-width: 420px;
+  width: 80%;
   height: auto;
   margin: 0 auto var(--space-md);
   display: block;
