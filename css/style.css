@@ -532,15 +532,15 @@ h6 { font-size: var(--text-lg); }
 .hero-logo-badge {
 /* ---------- Hero Logo ---------- */
 .hero__logo {
-  max-width: 480px;
-  width: 92%;
+  max-width: 320px;
+  width: 60%;
   height: auto;
-  margin: 0 auto var(--space-lg);
+  margin: 0 auto var(--space-md);
   display: block;
   background: rgba(255, 255, 255, 0.92);
-  border-radius: var(--radius-xl);
-  padding: 1.2rem 1.5rem;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  border-radius: var(--radius-lg);
+  padding: 0.8rem 1rem;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
   animation: heroLogoIn 1s ease-out;
 }
 
